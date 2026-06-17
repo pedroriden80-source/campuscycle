@@ -1,108 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Riden Resume</title>
+  <title>CAMPUSCYCLE</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- Header Section -->
-  <header>
-    <h1>Pedro x Riden</h1>
-    <img src="./Profile Picture.jpg" alt="Profile Picture"
-     height="100"
-     width="100">
-    <p><strong>Web Developer</strong></p>
-  </header>
+<nav>
+  <div class="nav-container">
+    <div class="logo">CAMPUSCYCLE</div>
 
-  <hr>
+    <div class="menu" onclick="toggleMenu()">☰</div>
 
-  <!-- Summary Section -->
-  <section>
-    <h2>Summary</h2>
-    <p>
-      A hardworking and dedicated Web Developer with strong skills in front-end technologies,
-      complemented by experience in administration and customer service. Passionate about building
-      clean, responsive, and user-friendly websites.
-    </p>
-  </section>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="post.html">Post</a>
+      <a href="works.html">How it Works</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+</nav>
 
-  <hr>
-  <!-- Education Section -->
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li>Bachelor of Arts Information Technology - Kings College of the Phillippines(2024-2028)
-    </ul>
-  </section>
-  <hr>
+<div class="hero">
+  <h1>Campus Circular Economy</h1>
+  <p>
+    Trade unused project materials, electronics, and dorm essentials within your campus.
+    Zero shipping. Zero waste. Maximum reuse.
+  </p>
+</div>
 
-  <!-- Work Experience Section -->
-  <section>
-    <h2>Work Experience</h2>
+<div class="container">
+  <div class="grid">
 
-    <article>
-      <h3>Freelance Web Developer</h3>
-      <p><em>January 2029 Present</em></p>
-      <ul>
-        <li>Develop and maintain responsive websites using HTML, CSS, and JavaScript.</li>
-        <li>Collaborate with clients to convert design mockups into functional web applications.</li>
-        <li>Optimize website performance and ensure cross-browser compatibility.</li>
-      </ul>
-    </article>
+    <div class="card">
+      <h3>Tech & E-Scrap</h3>
+      <p>Arduino, Raspberry Pi, sensors, wires and salvaged parts.</p>
+      <span class="badge">Electronics</span>
+    </div>
 
-    <article>
-      <h3>Administrative Assistant -XYZ Corp.</h3>
-      <p><em>June 2030 Present</em></p>
-      <ul>
-        <li>Managed scheduling, meetings, and appointments.</li>
-        <li>Handled incoming and outgoing correspondence.</li>
-        <li>Prepared professional reports and presentations using Microsoft Office.</li>
-      </ul>
-    </article>
+    <div class="card">
+      <h3>Design Materials</h3>
+      <p>Acrylic, foam boards, wood scraps, 3D printing leftovers.</p>
+      <span class="badge">Prototyping</span>
+    </div>
 
-  </section>
+    <div class="card">
+      <h3>Upcycled Gear</h3>
+      <p>Eco dorm items made from campus waste streams.</p>
+      <span class="badge">Eco</span>
+    </div>
 
-  <hr>
+  </div>
+</div>
 
-  <!-- Skills Section -->
-  <section>
-    <h2>Skills</h2>
-    <ul> 
-      <li>✔️Customer Service</li>
-      <li>✔️Microsoft Office Suite</li>
-      <li>✔️Organizational Skills</li>
-    </ul>
-  </section>
+<footer>
+  © 2026 CAMPUSCYCLE • Powered by RECYCLY
+</footer>
 
-  <hr>
-
-  <!-- Certifications Section -->
-  <section>
-    <h2>Awards & Certifications</h2>
-    <ul>
-      <li>Certified Professional Web Developer</li> 
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- Additional Information -->
-  <section>
-    <h2>Other Information</h2>
-    <ul>
-      <li><a href="./Hobbies.html ">My Hobbies</a></li>
-      <li><a href="./Contact.html">Contact Me</a></li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- Footer -->
-  <footer>
-    <p>@Pedro Riden. All rights reserved 2030.</p>
-  </footer>
+<script>
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+}
+</script>
 
 </body>
 </html>
